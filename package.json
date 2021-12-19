@@ -1,0 +1,16 @@
+{
+  "name": "embodied",
+  "version": "1.0.0",
+  "description": "A rather abitious attempt at a virtual embodied AI agent.",
+  "main": "index.js",
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.7.0",
+    "@tensorflow/tfjs-vis": "^1.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Collins",
+  "license": "ISC"
+}
