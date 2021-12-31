@@ -33,9 +33,10 @@ function initVisor() {
     lbl.innerHTML = name;
     lbl.style = "color: 0x000000";
     select.appendChild(dom);
-    select.appendChild(lbl);
-    select.appendChild(document.createElement('br'));
+    dom.appendChild(lbl);
+    console.log(dom);
   } );
+  console.log(select);
 	select.addEventListener( 'change', function (event) {
     console.log(event.target.value);
 		const currentSettings = baseActions[ currentBaseAction ];

@@ -1,15 +1,12 @@
 class StereoEffect {
 	constructor( ) {
-		this.stereo = new THREE.StereoCamera();
-		this.stereo.aspect = 1.0;
 	  this.rendererL = new THREE.WebGLRenderer( { antialias: true } );
 	  this.rendererL.setPixelRatio( window.devicePixelRatio );
-	  // this.rendererL.setSize( window.innerWidth, window.innerHeight );
 	  this.rendererL.outputEncoding = THREE.sRGBEncoding;
 	  this.rendererL.shadowMap.enabled = true;
+    
 	  this.rendererR = new THREE.WebGLRenderer( { antialias: true } );
 	  this.rendererR.setPixelRatio( window.devicePixelRatio );
-	  // this.rendererR.setSize( window.innerWidth, window.innerHeight );
 	  this.rendererR.outputEncoding = THREE.sRGBEncoding;
 	  this.rendererR.shadowMap.enabled = true;
     //----------------------------------------------
