@@ -1,11 +1,13 @@
 class StereoEffect {
 	constructor( ) {
 	  this.rendererL = new THREE.WebGLRenderer( { antialias: true } );
+    this.rendererL.setSize(500,350);
 	  this.rendererL.setPixelRatio( window.devicePixelRatio );
 	  this.rendererL.outputEncoding = THREE.sRGBEncoding;
 	  this.rendererL.shadowMap.enabled = true;
     
 	  this.rendererR = new THREE.WebGLRenderer( { antialias: true } );
+    this.rendererR.setSize(500,350);
 	  this.rendererR.setPixelRatio( window.devicePixelRatio );
 	  this.rendererR.outputEncoding = THREE.sRGBEncoding;
 	  this.rendererR.shadowMap.enabled = true;
